@@ -3,7 +3,40 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: midnightblue;
   
+ul{
+  overflow:hidden;
+  padding:0;
+  margin:0;
+  list-style-type: none;
 }
+
+ul li {
+  float: left;
+}
+.center-container {
+  display: flex; 
+  justify-content:center;
+  height: 100vh;
+
+}
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 30px;                      /* Spacing between columns */
+  padding: 10px;
+}
+  
+
+ul li a {
+  display: block;
+  background-color: black;
+  text-align: center;
+  padding: 12px 14px;
+}
+ul li a:hover{
+  background-color:midnightblue
+}
+
 h1 {font-size: 1.8rem; }
 p { color: #a6adc8;  }
 .menu {
